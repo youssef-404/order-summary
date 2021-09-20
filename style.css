@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body{
+    background: url(/images/pattern-background-desktop.svg) no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+section{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    max-width: 1440px;
+    
+}
+
+.container {
+    width: 360px;
+    background: white;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow:0px 15px 30px rgb(207, 200, 200);
+}
+
+.hero img{
+    border-radius: 10px 10px 0px 0px;
+}
+.content{
+    text-align: center;
+    margin: 30px;
+}
+.content h1 {
+    font-weight: 900;
+    color:hsl(223, 47%, 23%) ;
+}
+
+.content p{
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    font-weight: 500;
+}
+.plan{
+    display: flex;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+}
+.plan p {
+    font-weight: 700;
+    color: hsl(223, 47%, 23%) ;
+}
+.plan span {
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.mode_plan{
+    width: 50%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.plan a {
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+
+.plan a:hover {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+
+.payment_btn{
+    background-color: hsl(245, 75%, 52%);
+    padding :14px;
+    border-radius: 10px;
+    color: white;
+}
+.payment_btn:hover{
+    background-color:  hsl(224, 23%, 55%);
+}
+
+.cancel_btn {
+    margin-top: 25px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+.cancel_btn:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    float: right;
+}
+.attribution a {
+     color: hsl(228, 45%, 44%);
+     }
+
+
+@media screen and (max-width:375px){
+    body{
+        background: url(/images/pattern-background-mobile.svg) no-repeat;
+        background-color: hsl(225, 100%, 94%);
+    }
+    .container{
+        width: 90%;
+    }
+    .attribution{
+        margin-top: 45px;
+        font-size: 13px;
+    }
+}
